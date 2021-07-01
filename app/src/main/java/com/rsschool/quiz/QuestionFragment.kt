@@ -44,7 +44,7 @@ class QuestionFragment : Fragment() {
             binding.previousButton.isEnabled = false
         }
         else if (questionNumber == 5) {
-            binding.nextButton.text = "Finish"
+            binding.nextButton.text = "Submit"
         }
 
         binding.question.text = Questions.questions[questionNumber - 1].question

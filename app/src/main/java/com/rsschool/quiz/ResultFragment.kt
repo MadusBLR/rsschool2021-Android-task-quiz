@@ -51,10 +51,10 @@ class ResultFragment : Fragment() {
 
 
         binding.buttonShare.setOnClickListener {
-            var text = "Your result: $result/${answers.size}\n\n"
+            var text = "My result: $result/${answers.size}\n\n"
             for (i in answers.indices) {
                 text += "${i + 1}) ${Questions.questions[i].question}\n" +
-                        "Your answer: ${Questions.questions[i].answerOptions[answers[i] - 1]}\n\n"
+                        "My answer: ${Questions.questions[i].answerOptions[answers[i] - 1]}\n\n"
             }
             val sendIntent: Intent = Intent().apply {
                 action = Intent.ACTION_SEND
